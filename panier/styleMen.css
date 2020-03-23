@@ -1,0 +1,424 @@
+
+.container {
+  position: relative;
+  width: 80%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(red,black,red);
+   opacity: 0.5;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+	bottom:0;
+  height: 100%;
+}
+
+.text {
+  color: #F8F8FF;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
+
+body
+{
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background-color: ;
+}
+
+#bloc_page
+{
+    width: 1300px;
+    margin: auto;
+    background-color: #F8F8FF;
+}
+
+section h1, footer h1, nav a
+{
+    font-family: Dayrom, serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/* Header */
+
+header
+{
+    background: url('images/separateur.png') repeat-x bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#titre_principal
+{ 
+    display: flex;
+    flex-direction: column;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo img
+{
+    width: 100px;
+    height: 90px;
+}
+
+header h1
+{
+    font-family: 'BallparkWeiner', serif;
+    font-size: 3.5em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+}
+
+header h2
+{
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+/* Bannière */
+
+
+/* Corps */
+
+section
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+article, aside
+{
+    text-align: justify;
+}
+
+article
+{
+    margin-right: 20px;
+    flex: 3;
+}
+
+.ico_categorie
+{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+article p
+{
+    font-size: 0.8em;
+}
+
+aside
+{
+    flex: 1.2;
+    position: absolute;
+    right: 30px;
+   
+    width: 180px;
+    height: 140%;
+
+
+    background-color: #706b64;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+
+    color: white;
+    font-size: 0.9em;
+    text-align: center;
+
+
+}
+
+#fleche_bulle
+{
+    position: absolute;
+    top: 100px;
+    left: -12px;
+}
+
+
+
+aside img
+{
+    margin-right: 5px;
+}
+
+/* Footer */
+
+footer
+{
+    display: flex;
+  /*  background:  url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;*/
+    padding-top: 25px;
+}
+
+footer p, footer ul
+{
+    font-size: 0.8em;
+}
+
+footer h1
+{
+    font-size: 1.1em;
+}
+
+
+#tweet
+{
+    width: 28%;
+}
+
+#mes_photos
+{
+    width: 35%;
+}
+
+#mes_amis
+{
+    width: 31%;
+}
+
+#mes_photos img
+{
+    border: 1px solid #181818;
+    margin-right: 2px;
+}
+
+#listes_amis
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+#mes_amis ul
+{
+    list-style-image: url('images/ico_liensexterne.png');
+    padding-left: 2px;
+}
+
+#mes_amis a
+{
+    text-decoration: none;
+    color: #760001;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.counter{
+    background-image: url(../img/product-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}*/
+
+
+
+.product-card{
+    border: none;
+    text-align: center;
+    position: relative;
+    
+}
+
+.product-card .card-title{
+    font-weight: 600; font-size: 22px;
+}
+.product-card .card-text{font-size: 16px;
+    filter:drop-shadow(5px 5px 10px black);}
+
+
+
+#discount{
+    background-image: url(../img/discount-background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.discount-session-content {
+    padding: 150px 0;
+    color: white;
+}
+
+
+
+
+.prod{
+ width: 30%;
+ height: 30%;
+
+}
+.linkdin{
+   width: 1px;
+ height: 1px;
+}
+.butt{
+    background-color: green;
+    border: 5px;
+
+}
+
+.btn-info{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-style:italic;
+  font-weight:bolder;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+   border-radius: 50%;
+}
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 4px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+
+  box-sizing: border-box;
+}
+
+.column {
+  float: left1
+  width: 30.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column1 {
+  float: left;
+  width: 28.33%;
+  padding: 5px;
+}
+
+
+
+.tnd {
+  width: 370px;
+  height: 80px;
+  text-align-last: left;
+  font-size: 250%;
+    background-color:red;
+  animation-name: example;
+  animation-duration: 200s;
+}
+
+@keyframes example {
+  0%  {background-color: red;}
+   10%{background-color: yellow;}
+   70%  {background-color: aqua;}
+    20% {background-color: white;}
+ 30%   {background-color: green;}
+  40%  {background-color: pink;}
+  50%   {background-color: fuchsia;}
+  60%   {background-color: purple;}
+  1%   {background-color: maroon;}
+  2%   {background-color: navy;}
+  80%   {background-color: lime;}
+
+
+}
+
+.mySlides {
+display:none;
+width:500px;
+height:140px;   
+align:top;       
+}
+
+
+
+
+
+
+
+
